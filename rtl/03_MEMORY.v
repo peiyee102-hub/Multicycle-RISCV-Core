@@ -30,7 +30,7 @@ module MEMORY (
         .byte_write_i(byte_write), .write_data_i(write_data_i),
         .read_data_o(dmem_data)
     );
-    mux4_32 read_mux(
+    MUX4_32 read_mux(
         .a_i(32'b0), .b_i(imem_data), .c_i(dmem_data), .d_i(32'b0),
         .select_i(select_memory), .data_o(read_data_o)
     );
