@@ -2,7 +2,7 @@
 
 A 32-bit multicycle RISC-V processor written in Verilog. It implements the RV32I base integer instructions, the four Zmmul multiply instructions, and three custom CRC-16 instructions (Xicrc). It was developed and verified in ChipInventor and taken through OpenLane to a GDSII layout.
 
-| | |
+|---|---|
 | **ISA** | RV32I (44 instruction types in scope) + Zmmul (4) + custom Xicrc (3) |
 | **Microarchitecture** | Multicycle, one instruction at a time, 7-state FSM |
 | **Reset** | Synchronous, active high. PC = `0x00400000`, state = FETCH |
