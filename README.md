@@ -3,7 +3,6 @@
 A 32-bit multicycle RISC-V processor written in Verilog. It implements the RV32I base integer instructions, the four Zmmul multiply instructions, and three custom CRC-16 instructions (Xicrc). It was developed and verified in ChipInventor and taken through OpenLane to a GDSII layout.
 
 | | |
-|---|---|
 | **ISA** | RV32I (44 instruction types in scope) + Zmmul (4) + custom Xicrc (3) |
 | **Microarchitecture** | Multicycle, one instruction at a time, 7-state FSM |
 | **Reset** | Synchronous, active high. PC = `0x00400000`, state = FETCH |
@@ -133,16 +132,5 @@ top
     └── MUX4_32 (read data select)
 ```
 
-### Datapath and control
 
-<p align="center">
-  <img src="docs/img/datapath_left.png" width="48%" alt="Datapath, left view">
-  <img src="docs/img/datapath_right.png" width="48%" alt="Datapath, right view">
-</p>
-
-<p align="center">
-  <img src="docs/img/execution_unit.png" width="32%" alt="Execution unit">
-  <img src="docs/img/control_unit.png" width="32%" alt="Control unit">
-  <img src="docs/img/memory.png" width="32%" alt="Memory subsystem">
-</p>
 
